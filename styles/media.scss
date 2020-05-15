@@ -1,0 +1,22 @@
+@media screen and (max-width: 800px) {
+
+    .app-main__container {
+        justify-content: center;
+    }
+
+    .app-main__right > .form:first-child {
+        margin-top: 28px;
+    }
+}
+
+@media screen and(max-width: 400px) {
+    .app-main__right,
+    .app-main__left {
+        min-width: 300px;
+    }
+    .form__dobule {
+        .form__button {
+            max-width: 45%;
+        }
+    }
+}

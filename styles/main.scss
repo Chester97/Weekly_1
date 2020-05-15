@@ -1,0 +1,27 @@
+body {
+    background-image: url('../assets/Hot_vs_Cold_2560x1440.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+//Style Reset
+@import './reset.scss';
+
+//Atoms
+@import './helpers/atoms.scss';
+
+//Variables
+@import './helpers/variables.scss';
+
+//Main Section
+@import './components/section.scss';
+
+//Logo
+@import './components/logo.scss';
+
+//Forms
+@import './components/forms.scss';
+
+
+//Media Queries
+@import './media.scss';

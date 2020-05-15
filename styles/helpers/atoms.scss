@@ -1,0 +1,64 @@
+@import './variables.scss';
+
+.flex {
+    display: flex;
+
+    &--align-center {
+        align-items: center;
+    }
+
+    &--justify-center {
+        justify-content: center;
+    }
+
+    &--justify-end {
+        justify-content: flex-end;
+    }
+
+    &--justify-between {
+        justify-content: space-between;
+    }
+
+    &--full {
+        align-items: center;
+        justify-content: center;
+    }
+
+    &--row {
+        flex-direction: row;
+    }
+
+    &--column {
+        flex-direction: column;
+    }
+
+    &--wrap {
+        flex-wrap: wrap;
+    }
+
+    &--1 {
+        flex: 1;
+    }
+}
+
+.btn-danger {
+    background-color: $color-main-red;
+    border: 1px solid $color-second-red;
+}
+
+.btn-primary {
+    background-color: $color-main-green;
+    border: 1px solid $color-second-green;
+}
+
+.font-18 {
+    font-size: $font-medium;
+}
+
+.font-24 {
+    font-size: $font-big;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}

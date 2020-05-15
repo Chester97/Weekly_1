@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.scss"/>
+</head>
+<body>
+    <section class="app-main flex flex--column">
+       <header class="logo flex flex--full">
+            <img src="./assets/top_logo.svg" alt="Masteralb Logo" class="logo__item"/>
+       </header>
+       <section class="app-main__container flex flex--justify-between flex--wrap">
+           <section class="app-main__left">
+               <div class="form flex flex--column flex--justify-center">
+                    <h1 class="form__title">Register Form</h1>
+                    <div class="form__overlay">
+                        <form class="form__container">
+                            <div class="form__group flex flex--align-center">
+                                <img src="./assets/user.svg" alt="User logo" class="form__icon" />
+                                <div class="form__separator"></div>
+                                <input type="text" class="form__input" placeholder="Username"/>
+                            </div>
+                            <div class="form__group flex flex--align-center">
+                                <img src="./assets/password.svg" alt="Password logo" class="form__icon" />
+                                <div class="form__separator"></div>
+                                <input type="text" class="form__input" placeholder="Password"/>
+                            </div>
+                            <div class="form__group flex flex--align-center">
+                                <img src="./assets/password.svg" alt="Password logo" class="form__icon" />
+                                <div class="form__separator"></div>
+                                <input type="text" class="form__input" placeholder="Confirm Password"/>
+                            </div>
+                            <div class="form__group flex flex--align-center">
+                                <img src="./assets/email.svg" alt="Email logo" class="form__icon" />
+                                <div class="form__separator"></div>
+                                <input type="text" class="form__input" placeholder="Email"/>
+                            </div>
+                            <div class="form__group from__dropdown flex flex--align-center">
+                                <img src="./assets/location.svg" alt="Location logo" class="form__icon location-icon" />
+                                <div class="form__separator"></div>
+                                <select class="form__input">
+                                    <option selected="selected">Your Location</option>
+                                    <option value="1">New York</option>
+                                    <option value="2">Szudziałowo</option>
+                                </select>
+                            </div>
+                            <label class="form__label">I have read and accept the terms of use.
+                                <input type="checkbox" >
+                                <span class="form__checkmark"></span>
+                            </label>
+                            <button type="button" class="form__button mt-20 font-24 btn-primary">Sign Up</button>
+                        </form>
+                    </div>
+               </div>
+               <div class="form flex flex--column flex--justify-center">
+                    <h1 class="form__title">Send Email</h1>
+                    <div class="form__overlay">
+                        <form class="form__container">
+                            <div class="form__group flex flex--align-center">
+                                <img src="./assets/user.svg" alt="User name" class="form__icon" />
+                                <div class="form__separator"></div>
+                                <input type="text" class="form__input" placeholder="Your Name"/>
+                            </div>
+                            <div class="form__group flex flex--align-center">
+                                <img src="./assets/email.svg" alt="Email logo" class="form__icon" />
+                                <div class="form__separator"></div>
+                                <input type="text" class="form__input" placeholder="Your email"/>
+                            </div>
+                            <div class="form__group flex flex--align-center">
+                                <textarea placeholder="Type your message..." class="form__input form__textarea"></textarea>
+                            </div>
+                            <label class="form__label">Send a copy to my Email.
+                                <input type="checkbox" >
+                                <span class="form__checkmark"></span>
+                            </label>
+                            <button type="button" class="form__button mt-20 font-24 btn-primary">Send Email</button>
+                        </form>
+                    </div>
+                </div>              
+           </section>
+           <section class="app-main__right">
+                <div class="form flex flex--column flex--justify-center">
+                    <h1 class="form__title">Sign In Form</h1>
+                    <div class="form__overlay">
+                        <form class="form__container">
+                            <div class="form__group flex flex--align-center">
+                                <img src="./assets/user.svg" alt="User name" class="form__icon" />
+                                <div class="form__separator"></div>
+                                <input type="text" class="form__input" placeholder="Username"/>
+                            </div>
+                            <div class="form__group flex flex--align-center">
+                                <img src="./assets/password.svg" alt="Password logo" class="form__icon" />
+                                <div class="form__separator"></div>
+                                <input type="text" class="form__input" placeholder="Password"/>
+                            </div>
+                            <div class="flex flex--justify-center flex--align-center">
+                                <label class="form__label flex--1">Remember me.
+                                    <input type="checkbox" >
+                                    <span class="form__checkmark"></span>
+                                </label>
+                                <button type="button" class="form__button flex--1 font-24 btn-primary">Sign In</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="form flex flex--column flex--justify-center">
+                    <h1 class="form__title">Recovery Form</h1>
+                    <div class="form__overlay">
+                        <form class="form__container">
+                            <div class="form__group flex flex--align-center">
+                                <img src="./assets/email.svg" alt="Email logo" class="form__icon" />
+                                <div class="form__separator"></div>
+                                <input type="text" class="form__input" placeholder="Enter your Email"/>
+                            </div>
+                            <div class="form__group flex flex--align-center">
+                                <img src="./assets/phone.svg" alt="Phone logo" class="form__icon phone-icon" />
+                                <div class="form__separator"></div>
+                                <input type="text" class="form__input" placeholder="Enter your Phone number"/>
+                            </div>
+                            <div class="flex flex--justify-between flex--align-center form__dobule">
+                                <button type="button" class="form__button font-18 btn-primary">Send</button>
+                                <button type="button" class="form__button font-18 btn-primary form__button--done">Done</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="form flex flex--column flex--justify-center">
+                    <h1 class="form__title">Subscribe Form</h1>
+                    <div class="form__overlay">
+                        <form class="form__container">
+                            <div class="form__group flex flex--align-center">
+                                <img src="./assets/email.svg" alt="Email logo" class="form__icon" />
+                                <div class="form__separator"></div>
+                                <input type="text" class="form__input" placeholder="Enter your Email"/>
+                            </div>
+                            <div class="flex flex--justify-between flex--align-center form__dobule">
+                                <button type="button" class="form__button btn-primary font-18">Send</button>
+                                <button type="button" class="form__button btn-danger font-18">No, thanks</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer__logo flex flex--full">
+                    <img src="./assets/footer_logo.svg" alt="Masteralb logo" class="logo__item" />
+                </div>
+           </section>
+       </section>
+    </section>
+    <script src="./scripts/app.js"></script>
+</body>
+</html>
